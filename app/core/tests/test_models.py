@@ -7,7 +7,7 @@ from django.contrib.auth import get_user_model
 
 
 class ModelTests(TestCase):
-    """Teset models"""
+    """Test models"""
 
     def test_create_user_with_email_succesful(self):
         """Test creating a user with an email is succesful."""
