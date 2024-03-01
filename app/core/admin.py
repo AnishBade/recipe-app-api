@@ -17,6 +17,7 @@ class UserAdmin(BaseUserAdmin):
     (None, {'fields': ("email", "password")}),
     (
         _
+        
     )
     )
 
