@@ -115,7 +115,7 @@ class PrivateRecipeApiTests(TestCase):
         for k, v in payload.items():
             self.assertEqual(getattr(recipe, k), v)
 
-            self.assertEqual(recipe.user, self.user)
+        self.assertEqual(recipe.user, self.user)
 
     def test_partial_update(self):
         """Test partial update of a recipe."""
