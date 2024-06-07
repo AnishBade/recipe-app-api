@@ -54,7 +54,7 @@ class TagViewSet(
 class IngredientViewSet(mixins.ListModelMixin, viewsets.GenericViewSet):
     """Manage ingredients in the database."""
 
-    serializer_class = serializers.IngredientSerilizer
+    serializer_class = serializers.IngredientSerializer
     queryset = Ingredient.objects.all()
     authentication_classes = [TokenAuthentication]
     permission_classes = [IsAuthenticated]
